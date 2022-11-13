@@ -134,24 +134,25 @@ botann.onclick = ()=>{
             haro=haro+sui;
         }
         haro=haro*haro;
-        re.innerHTML="";
-        let nnn=("n=" + n + "の時、");
-        re.insertAdjacentHTML("beforeend",nnn);
-        const paragraph=document.createElement('br');
+        re.innerText="";
+        const paragraph=document.createElement('p');
+        const result=("n=" + n + "の時、");
+        paragraph.innerText=result;
         re.appendChild(paragraph);
-        let result=("(" + hyou[0]);
-        re.insertAdjacentHTML("beforeend",result);
+        const br=document.createElement('br');
+        re.appendChild(br);
+        const parara=document.createElement('p');
+        var piroro="(" + hyou[0];
         for (let onaka = 1; onaka < hyou.length; onaka++) {
             const naka = hyou[onaka];
-            let result=("+" + naka);
-            re.insertAdjacentHTML("beforeend",result);
+            piroro = piroro + "+" + naka;
         }
-        let resu=(")²=" + haro + "=" + hyou[0] + "³");
-        re.insertAdjacentHTML("beforeend",resu);
+        piroro = piroro + ")²=" + haro + "=" + hyou[0] + "³";
         for (let mou = 1; mou < hyou.length; mou++) {
             const tyoi = hyou[mou];
-            let resu=("+" + tyoi + "³");
-            re.insertAdjacentHTML("beforeend",resu);
+            piroro = piroro + "+" + tyoi + "³";
         }
+        parara.innerText=piroro;
+        re.appendChild(parara);
     }
 }
