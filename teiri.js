@@ -17,7 +17,7 @@ botann.onclick = ()=>{
     let hyou=[1];
     if (l==0){
         return;
-    } else if (isNaN(n) || n===0){
+    } else if (isNaN(n) || n<=0){
         re.innerText="";
         const paragraph=document.createElement('p');
         const result=("自然数を入力してください");
