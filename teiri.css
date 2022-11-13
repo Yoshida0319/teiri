@@ -68,3 +68,25 @@ ul{
 #eyou:checked ~ .tabu #ttb{
   display: block;
 }
+@media screen and (max-width:480px) {
+    *{
+        float: none;
+        position: static;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .hh {
+        margin-left: 15px;
+    }
+    ul.saisai{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #tt.tab{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
