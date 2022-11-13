@@ -62,6 +62,7 @@ ul{
     border-bottom: 1px solid #5bbee5;
     border-left: 1px solid #5bbee5;
     border-right: 1px solid #5bbee5;
+    overflow-wrap: break-word;
 }
 #kannga:checked ~ .tabu #tt,
 #eyou:checked ~ .tabu #ttb{
