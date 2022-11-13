@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リウヴィルの定理</title>
+    <link rel="stylesheet" href="teiri.css">
+</head>
+<body>
+    <h1>面白い式作成</h1>
+    <div class="tenntenn">
+        <input name="sasa" id="kannga" class="sase" type="radio" checked>
+        <input name="sasa" id="eyou" class="sase" type="radio">
+        <ul class="saisai">
+            <li>
+                <label id="tabou" class="sorasora" for="kannga">計算</label>
+            </li>
+            <li>
+                <label id="tabuu" class="sorasora" for="eyou">原理説明</label>
+            </li>
+        </ul>
+        <div class="tabu">
+            <div class="tab" id="tt">
+                <input type="number" id="nnoatai" size="40" maxlength="10" placeholder="nの値を入力">
+                <button id="botan">計算</button>
+                <br><br>
+                <div id="result-area"></div>
+                <br><br><br><br>
+                <h6>※半角で入力してください<br>※自然数を入力して下さい</h6>
+            </div>
+            <div class="tab" id="ttb">
+                <h2><font color="black">計算方法</font></h2><br>
+                <h4>わかりやすくn=10としてみます。<br>
+                    ① 10のすべての約数を計算してみます　1,2,5,10<br>
+                    ② ①で出てきた数字の約数をそれぞれ計算してみます　1,2,2,4<br>
+                    ③ ②で出てきた数列を足して2乗した数字と3乗してから足した数字が一致する<br><br>
+                    とのことです<br>
+                    これはnがいかなる値であろうと成り立つそうです。<br>
+                    正直証明はよくわかりませんがアルゴリズムだけ作ってみました。<br>
+                    しかしnの値によっては同じ数式が出てくる可能性もあります。<br>
+                    たとえばn=15とn=10では同じ式が出てきます。<br>
+                    バグではありませんのでご安心ください。
+                </h4>
+            </div>
+        </div>
+    </div>
+    <script src="teiri.js"></script>
+</html>
+</body>
